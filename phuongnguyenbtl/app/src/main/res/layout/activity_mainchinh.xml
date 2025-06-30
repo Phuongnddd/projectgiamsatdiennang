@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MAINCHINH">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nend" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+    <RelativeLayout
+        android:layout_marginTop="200dp"
+        android:id="@+id/b"
+        android:background="@drawable/trangthai"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="120dp"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/h"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng bếp"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                tools:ignore="DuplicateIds" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/kitchen" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="380dp"
+        android:id="@+id/d"
+        android:background="@drawable/trangthai"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="120dp"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/h"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng Ngủ"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                tools:ignore="DuplicateIds" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/bedroom" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="200dp"
+        android:id="@+id/a"
+        android:background="@drawable/trangthai"
+        android:layout_alignRight="@id/textView2"
+        android:layout_marginRight="30dp"
+        android:layout_width="120dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/living" />
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/h"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng Khách"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                tools:ignore="DuplicateIds" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="380dp"
+        android:id="@+id/c"
+        android:background="@drawable/trangthai"
+        android:layout_alignRight="@id/textView2"
+        android:layout_marginRight="30dp"
+        android:layout_width="120dp"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/h"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng xuất"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                tools:ignore="DuplicateIds" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/poweroff" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DothiphongkhachActivity">
+
+    <!-- Nền -->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:srcCompat="@drawable/nenz" />
+
+    <!-- Tiêu đề -->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/h">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Điền các thông số vào đây"
+            android:textStyle="bold"
+            android:textColor="#101010"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- Nhập dữ liệu -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView19"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="15dp"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:padding="16dp"
+        tools:ignore="NotSibling">
+
+        <EditText
+            android:id="@+id/mot"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/vien"
+            android:hint="Mức 1"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/hai"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/vien"
+            android:hint="Mức 2"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/ba"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/vien"
+            android:hint="Mức 3"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/bon"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/vien"
+            android:hint="Mức 4"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/nam"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/vien"
+            android:hint="Mức 5"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/sau"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/vien"
+            android:hint="Mức 6"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textColorHint="#80FFFFFF" />
+    </GridLayout>
+
+    <!-- Nút lưu -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/v"
+        android:text="Lưu"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:background="@drawable/v"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng số tiền điện là:" />
+    </RelativeLayout>
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="86dp"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dangki">
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/img33"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:paddingLeft="20dp"
+        android:background="@drawable/vien"
+        android:id="@+id/userdk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img33"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Tên đăng nhập"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:paddingLeft="20dp"
+        android:background="@drawable/vien"
+        android:id="@+id/passdk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userdk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:inputType="textVisiblePassword"
+        android:minHeight="48dp" />
+    <EditText
+        android:paddingLeft="20dp"
+        android:background="@drawable/vien"
+        android:id="@+id/passdk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passdk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="textVisiblePassword"
+        android:minHeight="48dp" />
+    <EditText
+        android:paddingLeft="20dp"
+        android:background="@drawable/vien"
+        android:id="@+id/hvt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passdk2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Họ và tên"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+    <RelativeLayout
+        android:layout_below="@id/hvt"
+        android:layout_marginTop="20dp"
+        android:id="@+id/dk2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/v"
+        tools:ignore="ExtraText">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:id="@+id/P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG KÝ" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
